@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "test-service"
+version = "0.1.0"
+description = ""
+authors = ["verafadeeva <lunatik.yar@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "test_service"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+aiohttp = {extras = ["speedups"], version = "^3.9.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
