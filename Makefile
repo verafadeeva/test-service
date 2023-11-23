@@ -1,7 +1,7 @@
-all: initial-db
+all: poetry
 
-initial-db: poetry
-	python db/initial_db.py
+initial: 
+	python3 db/initial_db.py
 
 poetry: poetry-inst
 	poetry shell
